@@ -89,7 +89,7 @@ class Img:
 
                         self.move_from_relative_y(relative_y)
                     except KeyError:
-                        relative_y = self.heigh - y_start_line
+                        relative_y = 0 if y_start_line == self.heigh else self.heigh - y_start_line
 
                         self.move_from_relative_y(relative_y)
 
